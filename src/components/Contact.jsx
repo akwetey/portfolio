@@ -29,36 +29,40 @@ const Contact = () => {
             </div>
             <p className="subtitle">Get in touch!</p>
             <form className="form_edit">
-              <div className="form-group">
-                <input
-                  type="text"
-                  className="form-control"
-                  id="exampleInputName"
-                  placeholder="Name"
-                  required
-                />
+              <div className="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="name" type="text" class="validate" />
+                <label for="name" style={{ fontSize: "18px" }}>
+                  Name
+                </label>
               </div>
-
-              <div className="form-group">
-                <input
-                  type="email"
-                  className="form-control"
-                  id="exampleInputEmail1"
-                  placeholder="Email"
-                  required
-                />
+              <div className="input-field col s12">
+                <i className="material-icons prefix">email</i>
+                <input id="email" type="email" className="validate" />
+                <label for="email" style={{ fontSize: "18px" }}>
+                  Email
+                </label>
               </div>
-
-              <div className="form-group">
+              <div className="input-field col s12">
+                <i className="material-icons prefix">mode_edit</i>
                 <textarea
-                  className="form-control"
-                  rows="5"
-                  placeholder="Message"
-                  required
+                  id="icon_prefix2"
+                  className="materialize-textarea"
                 ></textarea>
+                <label for="icon_prefix2" style={{ fontSize: "18px" }}>
+                  Message
+                </label>
               </div>
-              <button type="submit" className="btn btn-rabbit submit">
+              {/* <button type="submit" className="btn btn-rabbit submit">
                 Send Message
+              </button> */}
+              <button
+                className="btn btn-rabbit submit"
+                type="submit"
+                name="action"
+              >
+                Send Message
+                <i className="material-icons right">send</i>
               </button>
             </form>
           </div>

@@ -37,29 +37,34 @@ const Works = () => {
               Back to Home
             </Link>
             <div id="watermark">
-              <h2 className="page-title" text-center>
-                Recent Works
-              </h2>
+              <h2 className="page-title text-center">Recent Works</h2>
               <div className="marker">w</div>
             </div>
             <p className="subtitle">
-              This is a selection of my web design and development work. I've
-              been involve in many different types of project.
+              This is a selection of my web development works.
             </p>
-            <p className="info">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don't look even
-              slightly believable. If you are going to use a passage of Lorem
-              Ipsum, you need to be sure there isn't anything embarrassing
-              hidden in the middle of text. All the Lorem Ipsum generators on
-              the Internet tend to repeat predefined chunks as necessary, making
-              this the first true generator on the Internet. It uses a
-              dictionary of over 200 Latin words, combined with a handful of
-              model sentence structures, to generate Lorem Ipsum which looks
-              reasonable. The generated Lorem Ipsum is therefore always free
-              from repetition, injected humour, or non-characteristic words etc.
-            </p>
+            <div className="card">
+              <div className="card-image waves-effect waves-block waves-light">
+                {/* <img className="activator" src="images/office.jpg" /> */}
+              </div>
+              <div className="card-content">
+                <span className="card-title activator grey-text text-darken-4">
+                  Card Title<i className="material-icons right">more_vert</i>
+                </span>
+                <p>
+                  <a href="/#">This is a link</a>
+                </p>
+              </div>
+              <div className="card-reveal">
+                <span className="card-title grey-text text-darken-4">
+                  Card Title<i className="material-icons right">close</i>
+                </span>
+                <p>
+                  Here is some more information about this product that is only
+                  revealed once clicked on.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
