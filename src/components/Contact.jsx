@@ -4,6 +4,9 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
   return (
     <div id="contact_scroll" className="pages">
       <div className="container main">
@@ -28,18 +31,18 @@ const Contact = () => {
               <div className="marker">c</div>
             </div>
             <p className="subtitle">Get in touch!</p>
-            <form className="form_edit">
+            <form className="form_edit" onSubmit={handleSubmit}>
               <div className="input-field col s12">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="name" type="text" class="validate" />
-                <label for="name" style={{ fontSize: "18px" }}>
+                <i className="material-icons prefix">account_circle</i>
+                <input id="name" type="text" className="validate" />
+                <label htmlFor="name" style={{ fontSize: "18px" }}>
                   Name
                 </label>
               </div>
               <div className="input-field col s12">
                 <i className="material-icons prefix">email</i>
                 <input id="email" type="email" className="validate" />
-                <label for="email" style={{ fontSize: "18px" }}>
+                <label htmlFor="email" style={{ fontSize: "18px" }}>
                   Email
                 </label>
               </div>
@@ -49,7 +52,7 @@ const Contact = () => {
                   id="icon_prefix2"
                   className="materialize-textarea"
                 ></textarea>
-                <label for="icon_prefix2" style={{ fontSize: "18px" }}>
+                <label htmlFor="icon_prefix2" style={{ fontSize: "18px" }}>
                   Message
                 </label>
               </div>

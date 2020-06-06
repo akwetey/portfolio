@@ -33,6 +33,15 @@ body {
   border-color: #bb9e7d;
   background-color: #bb9e7d;
 }
+#contact_scroll {
+  overflow: hidden;
+}
+#work_scroll {
+  overflow: hidden;
+}
+#home_scroll {
+  overflow: hidden;
+}
 
 @media (min-width: 778px) {
   .main {
@@ -97,6 +106,7 @@ p {
 
 .logo h4 {
   font-family: "Josefin Sans";
+  font-size: 18px;
 }
 
 footer {

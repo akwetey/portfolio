@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div id="index">
       <div className="container main">
-        <div className="row home">
+        <div className="row home" id="home_scroll">
           <div id="index_left" className="col-md-6 left animated slideInLeft">
             {/* <img
               className="img-responsive img-rabbit"
